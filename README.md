@@ -3,7 +3,7 @@ Assignment 10
 Edited README
 
 ```
-class garrett
+class garrettCars
 {
 String carName;
 String carModel;
