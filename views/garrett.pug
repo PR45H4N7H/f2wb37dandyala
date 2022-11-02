@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1 Search results cars  
+  -  var myArr = [{"carName":"Tesla","carModel":"Model 3","cost":52000},{"carName":"Toyota","carModel":"Highlander 22","cost":96000},{"carName":"Ford","carModel":"Explorer 22","cost":840000}]
+  div.container-fluid
+   div.row
+    each item,index in myArr 
+     div.col-sm-2 Company Name: #{item["carName"]}  <br>  Car Type: #{item["carModel"]} <br> Cost: #{item["cost"]} 
+  
+   
+
