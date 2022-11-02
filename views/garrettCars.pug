@@ -6,7 +6,10 @@ block content
   div.container-fluid
    div.row
     each item,index in results 
-     div.col-sm-2 Company Name: #{item["carName"]}  <br>  Car Type: #{item["carModel"]} <br> Cost: #{item["cost"]} 
+     div.col-sm-2(onclick=`buy(${index})`) Company Name: #{item["carName"]}  <br>  Car Type: #{item["carModel"]} <br> Cost: #{item["cost"]} 
   
    
-
+  script.
+      function buy(index){
+         alert("you purchased item "+(index+1))
+      }
